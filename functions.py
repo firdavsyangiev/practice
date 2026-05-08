@@ -57,11 +57,24 @@ print("======= KEYWORD & DEFAULT ARGUMENTS ========")
 # DEFINE
 
 
-def give_greet(name, age=22):
-    print("give_greet is executed")
-    return f"Hello {name}, you are {age} years old!"
+# def give_greet(name, age=22):
+#     print("give_greet is executed")
+#     return f"Hello {name}, you are {age} years old!"
+
+
+# # CALL
+# result4 = give_greet("Jessica")
+# print("result4:", result4)
+
+print("======= SCOPE ========")
+b = 100
+# DEFINE
+
+
+def calculate(a, b):
+    c = a * b
+    print(f"the value of c:, {c}")
 
 
 # CALL
-result4 = give_greet("Jessica")
-print("result4:", result4)
+calculate(5, 50)
