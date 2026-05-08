@@ -28,3 +28,40 @@ print("result1:", result1)
 
 result2 = greeting("John")
 print("result2:", result2)
+
+print("======= KEYWORD & DEFAULT ARGUMENTS ========")
+# DEFINE
+# def give_greet(name, age):
+#     print("give_greet is executed")
+#     return f"Hello {name}, you are {age} years old!"
+
+
+# # CALL
+# result3 = give_greet("Justin", 28)
+# print("result3:", result3)
+
+# >>>>>>KEYWORD ARGUMENTS<<<<<<<
+# DEFINE
+
+
+# def give_greet(name, age):
+#     print("give_greet is executed")
+#     return f"Hello {name}, you are {age} years old!"
+
+
+# # CALL
+# result3 = give_greet("Justin", age=28)
+# print("result3:", result3)
+
+# >>>>>>DEFAULT ARGUMENTS<<<<<<<
+# DEFINE
+
+
+def give_greet(name, age=22):
+    print("give_greet is executed")
+    return f"Hello {name}, you are {age} years old!"
+
+
+# CALL
+result4 = give_greet("Jessica")
+print("result4:", result4)
