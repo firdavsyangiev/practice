@@ -25,3 +25,28 @@ print("Result1:", result1)
 
 result2 = math.ceil(98.7)  # CALL
 print("Result2:", result2)
+
+
+print("=====Error Handling System=======")
+
+''' ERROR:
+car_dict = dict(name="Toyota", year=2026, electric=True)
+result = car_dict["origin"]  
+print("Result:", result)
+'''
+
+car_dict = dict(name="Toyota", year=2026, electric=True)
+
+try:
+    print("PASSED HERE")
+    a = car_dict.speed
+    result = car_dict["origin"]
+    print("Result:", result)
+except KeyError as err:
+    print("No origin state property found:", err)
+except AttributeError as err:
+    print("No speed attribute found:", err)
+else:
+    print("Executed successfully without any error.")
+finally:
+    print("Final closing logic")
