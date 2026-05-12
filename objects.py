@@ -39,7 +39,7 @@ car_dict = dict(name="Toyota", year=2026, electric=True)
 
 try:
     print("PASSED HERE")
-    a = car_dict.speed
+    # a = car_dict.speed
     result = car_dict["origin"]
     print("Result:", result)
 # except KeyError as err:
