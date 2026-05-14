@@ -35,5 +35,53 @@ print("c == d:", c == d)  # only value
 print(id(c), id(d), id(e))
 
 
-print("c is d:", c is d)
+print("c is d:", c is d)  # only reference
 print("c is e:", c is e)
+
+
+print("=====CONDITIONS=======")
+x = 5
+
+if x > 50:
+    print("Case A")
+elif x > 10:
+    print("Case B")
+else:
+    print("Case C")
+
+
+print("====== LOGICAL OPERATORS ======")
+
+# age = 18
+# person = None
+
+# if age > 18:
+#     person = "Adult"
+# else:
+#     person = "Child"
+
+# print("Person:", person)
+
+
+# Ternary operator
+age = 18
+
+person = "Adult" if age >= 18 else "Minor"
+print("Person:", person)
+
+print("============")
+
+is_student = True
+is_admin = False
+is_guest = True
+is_parent = False
+
+if not is_student:
+    print("hi, Do you want to be a student?")
+elif is_admin:
+    print("Please,go to the office")
+# elif is_guest or is_parent:
+elif is_guest and is_parent:
+    print("Waiting room is over here!")
+else:
+    print("Other case")
