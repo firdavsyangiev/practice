@@ -37,6 +37,9 @@ class Dog(Animal):
     def protect(self):
         print("Yes, I can protect you!")
 
+    def make_voice(self):
+        print(f"{self.name} says {self.sound}")
+
 
 class Cat(Animal):  # Child
     # state
@@ -91,3 +94,22 @@ print(dog.description)
 print("============")
 print(dog._status)
 print(cat._status)
+
+
+print("=====Polymorphism=======")
+dog.make_voice()
+cat.make_voice()
+
+print("============")
+# fish > Fish > Animal > object
+a = isinstance(fish, Fish)
+b = isinstance(fish, Animal)
+c = isinstance(fish, object)
+d = isinstance("MIT", object)
+result = a and b and c and d
+print(f"Result: {result}")
+
+# Fish > Animal > object
+data1 = issubclass(Fish, Animal)
+data2 = issubclass(Animal, object)
+print("data:", data1, data2)
