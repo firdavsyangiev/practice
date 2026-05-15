@@ -1,5 +1,5 @@
 print("=====Iterable objects and RANGE=======")
-# Iterable objects: string, list, tuple, dict, range, filter, map
+# Iterable objects: string, list, tuple, dict, range, filter, map, zip
 
 range_obj = range(3)  # [0, 3]
 print(f"Range object: {range_obj}")
