@@ -70,9 +70,18 @@ print("-------")
 def introduce(**kwargs):
     print(f"the type (**kwargs) value: {type(kwargs)}")
     print(f"Hi, I am {kwargs["name"]} and I am {kwargs["age"]} years old!")
-    pass
 
 
 # call
 introduce(name="Justin", age=28)
 introduce(name="Shawn", age=30, single=True)
+print("-------")
+
+
+def greeting(*args, **kwargs):
+    print("*args >", args)
+    print("**kwargs >", kwargs)
+
+
+# call
+greeting("hi", True, 10, name="John", age=22)
