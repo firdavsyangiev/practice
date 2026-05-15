@@ -1,7 +1,7 @@
 print("=====Iterable objects and RANGE=======")
 # Iterable objects: string, list, tuple, dict, range, filter, map
 
-range_obj = range(3)
+range_obj = range(3)  # [0, 3]
 print(f"Range object: {range_obj}")
 
 for letter in "MIT":
